@@ -67,7 +67,6 @@ void modoInfrarrojo() {
 void modoSensorLuz() {
     Serial.println("Modo Sensor de Luz activado");
     
-    void modoSensorLuz() {
     int intensidadLuz = miRover.obtenerIntensidadLuz();
     if (intensidadLuz < 300) {
         // Si la intensidad de luz es baja, detener el rover
@@ -79,5 +78,4 @@ void modoSensorLuz() {
         Serial.println("Suficiente luz. Moviendo el rover hacia adelante.");
     }
     delay(100);
-}
 }
